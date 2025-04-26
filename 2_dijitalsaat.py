@@ -4,8 +4,8 @@ from tkinter import Tk, Label
 # Pencereyi oluşturma
 app_window = Tk()
 app_window.title("Dijital Saat")
-app_window.geometry("400x200")
-app_window.configure(bg="bisque")
+app_window.geometry("400x200")# boyutlar
+app_window.configure(bg="bisque")#arka plan rengi
 
 # Saat etiketini oluşturma
 label = Label(app_window, font=("Arial", 36, 'bold'), bg="bisque", fg="black")
@@ -23,4 +23,5 @@ def update_time():
     label.after(1000, update_time)  # Her 1000 milisaniyede bir güncelleme yap
 
 update_time()
-app_window.mainloop()
+app_window.mainloop()# sürekli hale getirir
+# mac için python 3.13.3 ile çalıştırdım 3.9.6 hata verdi
